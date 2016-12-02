@@ -1,0 +1,23 @@
+.fleft{
+	float: left;
+	width: 300px;
+	background-color: antiquewhite
+}
+.fright{
+	float: left;
+	margin-left: 5px;
+	width: 300px;
+	background-color: red;
+}
+.col{
+	-webkit-column-count:4;
+	-webkit-column-rule-style:dotted;
+}
+.center{
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	height: 300px;
+	width: 300px;
+	background-color: orange;
+}

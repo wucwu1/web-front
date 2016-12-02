@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    padding-top: 100px;
+}
+
+.pet {
+    position: relative;
+    width: 200px;
+    height: 230px;
+    margin: 0 auto;
+}
+
+.pet .header {
+    position: relative;
+    height: 130px;
+    width: 180px;
+    border: 5px solid #453333;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: rotateZ(2deg);
+    background: #ffffff;
+    box-shadow: 1px 1px 1px #555, -1px -1px 1px #555;
+}
+
+.header .eye {
+    position: relative;
+    width: 180px;
+    height: 45px;
+    margin-top: 50px;
+}
+
+.header .eye > div {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    background-color: #453333;
+    border-radius: 50%;
+    z-index: 39;
+}
+
+.header .left-eye {
+    top: 0;
+    left: 15px;
+    transform: rotateZ(10deg);
+}
+
+.header .right-eye {
+    top: 0;
+    right: 15px;
+    transform: rotateZ(-10deg);
+}
+
+.header .eye i {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 19;
+}
+
+.header .face-wrap {
+    position: relative;
+    width: 180px;
+    height: 45px;
+    top: -20px;
+}
+
+.header .face-wrap > div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px #fe8096, -1px -1px 2px #fe8096;
+    background: #fe8096;
+    z-index: 9;
+}
+
+.header .left-face {
+    top: 0;
+    left: 10px;
+}
+
+.header .right-face {
+    top: 0;
+    right: 10px;
+}
+
+
+/*鼻子样式*/
+
+.pet .header .nose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+}
+
+.pet .header .nose div {
+    position: absolute;
+    width: 25px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #453333;
+}
+
+.pet .header .nose .nose-left {
+    top: 10px;
+    left: -3px;
+    -webkit-transform: rotateZ(30deg);
+}
+
+.pet .header .nose .nose-right {
+    top: 10px;
+    right: -3px;
+    -webkit-tranform: rotateZ(-30deg);
+}
+
+.pet .header .nose .nose-bottom {
+    width: 10px;
+    bottom: 2px;
+    left: 10px;
+    -webkit-transform: rotateZ(90deg);
+}
+
+
+/*ear*/
+
+.pet .ear {
+    position: absolute;
+    top: -35px;
+    left: 12px;
+    width: 200px;
+    height: 50px;
+    z-index: -9;
+    -webkit-transform: rotateZ(2deg);
+}
+
+.pet .left-ear {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 30px;
+    height: 60px;
+    border: 5px solid #453333;
+    border-radius: 45%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #453333 inset, -1px -1px 1px #453333 inset;
+    -webkit-transform: rotateZ(20deg);
+}
+
+.pet .right-ear {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 30px;
+    height: 60px;
+    border: 5px solid #453333;
+    border-radius: 45%;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #453333 inset, -1px -1px 1px #453333 inset;
+    -webkit-transform: rotateZ(20deg);
+}
+
+/*蝴蝶结*/
+.wrap .pet .head-decs{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 200px;
+	height: 150px;
+	z-index: 209;
+
+	-webkit-transform:rotateZ(2deg);
+}
+.pet .head-decs .follower{
+	position: absolute;
+	top:0;
+	left: 20px;
+	width: 100px;
+	height: 40px;
+	z-index: 199;
+}
+
+.pet .head-decs .follower .left-f{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+
+    border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 15px;
+	border: 3px solid #453333;
+	background-color: #78e6fd;
+
+}
+
+.pet .head-decs .follower .middle-f{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top:10px;
+	left: 25px;
+
+	border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 15px;
+	border: 3px solid #453333;
+	background-color: #78e6fd;
+}
+
+.pet .head-decs .follower .right-f{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top:0;
+	left: 35px;
+
+	border-top-left-radius: 20px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 15px;
+	border: 3px solid #453333;
+	background-color: #78e6fd;
+}
+
+.pet .pet-body{
+	position: relative;
+	width: 200px;
+	height: 50px;
+	margin-top: -5px;
+	z-index: -1;
+}
+
+.pet .pet-body .main-body{
+	position: absolute;
+	width: 110px;
+	height: 70px;
+	top:-30px;
+	left: 40px;
+	border: 5px solid #453333;
+	background-color: #edad56;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	z-index: 58;
+}
+
+.pet .pet-body .main-body i{
+	position: absolute;
+	display: block;
+	width: 5px;
+	height: 10px;
+	background-color: #453333;
+	border-radius: 3px;
+}
+
+.pet .pet-body .main-body .i-one{
+	top:50px;
+	left: 8px;
+}
+
+.pet .pet-body .main-body .i-two{
+	top:53px;
+	left: 33px;
+}
+
+.pet .pet-body .main-body .i-three{
+	top:54px;
+	left: 63px;
+}
+
+.pet .pet-body .main-body .i-four{
+	top:53px;
+	left: 90px;
+	-webkit-transform:rotateZ(-10deg);
+}
+
+.pet .pet-body .main-body span{
+	position: absolute;
+	top:50px;
+	left: 70px;
+	color: #453333;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.pet .pet-body .left-hand{
+	position: absolute;
+	width: 20px;
+	height: 45px;
+	top:-20px;
+	left: 38px;
+	background-color: #fff;
+	border:5px solid #453333;
+	border-radius: 50%;
+	z-index: 49;
+
+	-webkit-transform:rotateZ(40deg);
+}
+
+.pet .pet-body .right-hand{
+	position: absolute;
+	width: 20px;
+	height: 45px;
+	top:-20px;
+	right: 30px;
+	background-color: #fff;
+	border:5px solid #453333;
+	border-radius: 50%;
+	z-index: 59;
+
+	-webkit-transform: rotateZ(-40deg);
+}
+
+.pet .pet-body .left-leg{
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	top:5px;
+	left: 50px;
+	background-color: #fff;
+	border:5px solid #453333;
+	border-radius: 20px;
+	z-index: 9;
+}
+
+.pet .pet-body .right-leg{
+	position: absolute;
+	width: 50px;
+	height: 55px;
+	top:-3px;
+	right: 50px;
+	background-color: #fff;
+	border: 5px solid #453333;
+	border-radius: 23px;
+	z-index: 9;
+}
+
+.ear-animation{
+	transform-origin: 15px 60px;
+	-webkit-animation: ear-animation ease-in-out infinite 5s;
+}
+
+@-webkit-keyframes ear-animation{
+	0%{
+		transform: rotateZ(2deg);
+	}
+	25%{
+		transform: rotateZ(20deg);
+	}
+	75%{
+		transform: rotateZ(40deg);
+	}
+	100%{
+		transform: rotateZ(2deg);
+	}
+}
+
+
+

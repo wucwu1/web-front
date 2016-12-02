@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>flex box</title>
+    <style type="text/css">
+    .con{
+    	display: -webkit-flex;
+    	-webkit-box-direction:vertical;
+    	width: 600px;
+    	background-color: green;
+    }
+    .first {
+    	-webkit-order:2;
+        height: 100px;
+        -webkit-flex:1;
+        background-color: orange;
+    }
+    
+    #second {
+    	-webkit-order:3;
+        height: 100px;
+        -webkit-flex:1;
+        background-color: aquamarine;
+    }
+    
+    #three {
+    	-webkit-order:1;
+        height: 200px;
+        -webkit-flex:1;
+        background-color: #E3FF7F;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="first">第一个</div>
+        <div id="second">第2个</div>
+        <div id="three">第3个</div>
+    </div>
+</body>
+
+</html>

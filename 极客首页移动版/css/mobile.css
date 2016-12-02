@@ -1,0 +1,138 @@
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+html {
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+}
+
+body,
+button,
+input,
+select,
+table,
+textarea {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit],
+select {
+    -webkit-appearance: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.green-btn {
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    background-color: #35b558;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.s-register header .logo {
+    width: 6.7rem;
+    height: 2.5rem;
+    margin: 1rem 0 3rem 1.5rem;
+}
+
+.s-register header h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #727272;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.s-register header h2 span {
+    color: #e84608
+}
+
+.content {
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.content input {
+    width: 100%;
+    height: 4.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+.content .tel-phone {
+    position: relative;
+}
+
+.content .tel-phone .get-verify {
+    position: absolute;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    top: 1.25rem;
+    right: 2rem;
+    color: #35b558;
+}
+
+.content .form-cont {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.content .form-cont input {
+    display: inline-block;
+    width: 2rem;
+    height: 1.2rem;
+    padding: 0;
+}
+
+.content .form-cont span {
+    display: inline-block;
+    height: 2.5rem;
+    color: #727272;
+}
+
+.content .form-cont a {
+    display: inline-block;
+    height: 2.5rem;
+    color: #35b558;
+}

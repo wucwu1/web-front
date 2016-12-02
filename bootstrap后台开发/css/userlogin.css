@@ -1,0 +1,79 @@
+.clearfix:after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+body{
+	background: url("../img/bg.jpg") repeat;
+	background-size: 100%;
+}
+
+/*
+* login container
+*/
+
+.container header{
+	margin-top: 200px;
+	text-align: center;
+}
+
+.container header h2{
+	color: #fff;
+	font-size: 38px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+
+.container .wrap{
+	text-align: center;
+}
+
+.container .wrap .login{
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	color: #666;
+	text-align: center;
+	background-color: rgba(238,238,238,0.4);
+}
+
+.wrap .login .input-group{
+	margin-bottom: 20px;
+}
+
+.icon-wrench{
+	vertical-align: middle;
+}
+
+.wrap .login button{
+	width: 100%;
+	color: #fff;
+	height: 40px;
+	background-color: #0e0e0e;
+}
+
+
+/*手机屏幕适配*/
+@media (max-width: 768px){
+	html,body{
+		height: 100%;
+	}
+
+	body{
+		min-width: 300px;
+		background: #333;
+	}
+
+	.container header{
+		margin-top: 100px;
+	}
+
+	.container .wrap .login{
+		width: 100%;
+	}
+}
+
+

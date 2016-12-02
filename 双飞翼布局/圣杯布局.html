@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>div+css布局</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {}
+    
+    .header {
+        background: orange;
+        height: 150px;
+    }
+    
+    .article {
+        background: green;
+        height: 300px;
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+    
+    .footer {
+        background: yellow;
+        height: 100px;
+    }
+    
+    .article .left {
+        background: blue;
+        float: left;
+        width: 150px;
+        color: white;
+        height: 16px;
+        margin-left: -100%;
+        position: relative;
+        left: -150px;
+    }
+    
+    .article .right {
+        background: aquamarine;
+        float: right;
+        width: 100px;
+        height: 16px;
+        margin-left: -100px;
+        position: relative;
+        right: -100px;
+    }
+    
+    .article .middle {
+        background: brown;
+        float: left;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        我是头
+    </div>
+    <div class="article">
+        <div class="middle">
+            我是中间
+        </div>
+        <div class="left">
+            我是左
+        </div>
+        <div class="right">
+            我是右
+        </div>
+    </div>
+    <div class="footer">
+        我是尾部 版权所有©️
+    </div>
+</body>
+
+</html>

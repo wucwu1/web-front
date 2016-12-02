@@ -1,0 +1,90 @@
+.pink #sethome{
+	background: #ff6666;
+}
+
+.pink a:hover{
+	color: #ff6666;
+}
+
+.pink .bs{
+	border-color: #ff6666;
+}
+
+.pink .bgs{
+	background-color: #ff6666;
+}
+
+.pink .active{
+	background-color: #ff6666;
+	color: #fff;
+}
+
+
+.purple #sethome{
+	background: #6666FF;
+}
+
+.purple a:hover{
+	color: #6666FF;
+}
+
+.purple .bs{
+	border-color: #6666FF;
+}
+
+.purple .bgs{
+	background-color: #6666FF;
+}
+
+.purple .active{
+	background-color: #6666FF;
+	color: #fff;
+}
+
+
+
+.blue #sethome{
+	background: #0080FF;
+}
+
+.blue a:hover{
+	color: #0080FF;
+}
+
+.blue .bs{
+	border-color: #0080FF;
+}
+
+.blue .bgs{
+	background-color: #0080FF;
+}
+
+.blue .active{
+	background-color: #0080FF;
+	color: #fff;
+}
+
+
+
+
+.green #sethome{
+	background: #0BA15D;
+}
+
+.green a:hover{
+	color: #0BA15D;
+}
+
+.green .bs{
+	border-color: #0BA15D;
+}
+
+.green .bgs{
+	background-color: #0BA15D;
+}
+
+.green .active{
+	background-color: #0BA15D;
+	color: #fff;
+}
+

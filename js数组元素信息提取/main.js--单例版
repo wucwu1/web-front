@@ -1,0 +1,79 @@
+var maxNum = {
+	charArray: '',
+	maxChar: '',
+	maxCounter: 0,
+	maxCharArray: [],
+	init: function(){
+		this.getCharArray();
+	},
+	getCharArray: function(){
+		var inputStr = document.getElementById("inputStr");
+		var calculateBtn = document.getElementById("calculateBtn");
+		_this = this;
+		calculateBtn.onclick = function(){
+			_this.charArray = inputStr.value;
+			_this.calculate();
+		}
+	},
+	calculate: function(){
+		var chars = this.charArray;
+
+		var maxChar = '';
+		var maxCounter = 0;
+		var maxCharArray = []
+		var charObj = {};
+
+		for(var e in chars){
+			var tempChar = chars[e];
+			if(charObj[tempChar]){
+				charObj[tempChar] += 1;
+				if(maxCounter < charObj[tempChar]){
+					maxCounter = charObj[tempChar];
+					maxChar = chars[e];
+				}
+			}else{
+				charObj[tempChar] = 1;
+			}
+		}
+
+			if(maxCounter == 0){
+				maxChar = chars[0];
+				maxCounter = 1;
+				maxCharArray = [0];
+			}else{
+				for(var e in chars){
+					if(chars[e] == maxChar){
+						maxCharArray.push(e);
+					}
+				}
+			}
+
+			this.maxChar = maxChar;
+			this.maxCounter = maxCounter;
+			this.maxCharArray = maxCharArray;
+
+			this.resultView();
+		},
+
+		resultView: function(){
+			var maxChar = document.getElementById("maxChar");
+			var maxCounter = document.getElementById("maxCounter");
+			var strIndex = document.getElementById("strIndex");
+
+			maxChar.innerHTML = this.maxChar;
+			maxCounter.innerHTML = this.maxCounter;
+
+			var maxCharArray = this.maxCharArray;
+
+			var charIndex = '';
+			for(var c in maxCharArray){
+				charIndex += (maxCharArray[c] + ',');
+			}
+			charIndex = charIndex.substr(0, charIndex.length - 1);
+			strIndex.innerHTML = charIndex;
+		}
+	};
+
+	(function(){
+		maxNum.init();
+	})();
